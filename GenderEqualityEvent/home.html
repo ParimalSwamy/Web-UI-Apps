@@ -3,32 +3,74 @@
     
 <head>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
     <link rel="stylesheet" href="CSS/style.css">
-    <script type="text/javascript" src="JS/script.js">
-    </script>
-       
-        <TITLE>WOMEN'S DAY PLEDGE</TITLE>
+    <script type="text/javascript" src="JS/mainScript.js"></script>
+    <TITLE>WOMEN'S DAY PLEDGE</TITLE>
 </head>
 
 <body>
+    
+    <div class="bg-modal">
+        <form action="#" method="post">
+            <div class="modal-content">
+            <div id="close">+</div>
+            <input class="textpad" type="text" placeholder="Name" required><br>
+            <input class="textpad" type="email" placeholder="Email" required><br>
+            <input type="checkbox" required><span>Do you agree to all the terms and conditions.</span><br>
+            <a href="#">Terms and conditions</a><br><br>
+            <input type="submit" id="submit">
+        </div>
+        </form>
+        
+    </div>
+    <header>
+        <h2>WOMEN EMPOWERMENT</h2>
+    <p>PLEDGE FOR GENDER EQUALITY</p>
+    </header>
+    
     <div id="main-bg">
         <div id="main-bg-grad">
             <div id="main-text">
                 
                 <div>
-                    <h1>#WOMENEMPOWERMENT</h1>
-                    <span class="quote">"</span><p>qbdbqowbdiq coibnoci eobewibc eoibciwne cbweicowne icobwen coewbnociew obciewobdf</p><span class="quote">"</span></div>
-            <button>PLEDGE</button></div>
+                    <div id="quote-stn">
+                        <h1>#WOMENEMPOWERMENT</h1>
+                    <p id="quote-msg"></p></div>
+                </div>
+            <button class="pledge-btn">PLEDGE</button>
+            </div>
             </div>
         </div>
     <div>
         <div class="tile-container">
-            <div class="tile" id="tile1"></div>
-            <div class="tile" id="tile2"></div>
+            <div class="tile" id="tile1">
+                <img src="CSS/Images/Ad1.png"/>
+                <p>This offer is valid upto a limited time only.</p>
+                <button onclick="topFunction()" class="pledge-btn">PLEDGE</button>
+            </div>
+            <div class="tile" id="tile2">
+                <p>That's not it! We will also give you a certificate for doing this awesome job!
+                <span>Get your's NOW!</span>               
+                </p>
+                <img src="CSS/Images/Certificate.png"/>
+            </div>
         </div>
     </div>
-    <footer></footer>
+
+    <footer>
+        <div>
+    <h3>ABOUT US:</h3>
+        <p>
+        Here mention text about the event. Here mention text about the event.
+            Here mention text about the event. Here mention text about the event. Here mention text about the event. Here mention text about the event. Here mention text about the event. Here mention text about the event. Here mention text about the event.
+            Here mention text about the event. Here mention text about the event. Here mention text about the event. Here mention text about the event. Here mention text about the event.
+            Here mention text about the event. Here mention text about the event.
+            Here mention text about the event. Here mention text about the event. Here mention text about the event. Here mention text about the event. Here mention text about the event.
+        </p>
+        <p id="copyrights">&#174; All rights reserved 2021.</p>
+        </div>
+    </footer>
 </body>
 
 </html>
