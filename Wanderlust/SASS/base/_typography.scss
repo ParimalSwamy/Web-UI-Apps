@@ -1,0 +1,40 @@
+@font-face {
+    font-family: heading-font;
+    src: url(../CSS/billion-dreams-font/BillionDreams-vmgK9.ttf);
+  }
+
+body{
+    padding: 3rem; 
+}
+
+.heading-primary{
+    color: black;
+    font-family: heading-font;
+    font-weight: lighter;
+    text-align: center;
+    animation-fill-mode: backwards;
+    
+    &--main{
+        display: block;
+        font-size: 15rem;
+        height: 30rem; 
+        animation: moveInTop;
+        animation-duration: 2s;
+        animation-delay: 2s;
+        animation-fill-mode :both;
+    }
+
+    &--sub{
+        display: block;
+        word-spacing: 2rem;
+        animation: moveInBottom;
+        animation-duration: 1s;
+        animation-delay: 4s;
+        animation-fill-mode :both;
+        font-size: 2rem;
+        font-family:sans-serif;
+        font-weight: 700;
+        margin-bottom: 5rem;
+    }
+
+}

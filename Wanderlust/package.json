@@ -1,0 +1,14 @@
+{
+  "name": "wanderlust",
+  "version": "1.0.0",
+  "description": "Landing page for Wanderlust",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass":"node-sass SASS/main.scss CSS/style.css -w"
+  },
+  "author": "Parimal",
+  "license": "ISC",
+  "dependencies": {
+    "npm-sass": "^3.0.0"
+  }
+}
