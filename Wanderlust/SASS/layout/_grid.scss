@@ -1,0 +1,16 @@
+.row{
+    max-width: $grid-width;
+    font-family: sans-serif;
+    margin: 0 auto;
+    &:not(:last-child){
+        margin-bottom: $gutter-v;
+    } 
+}
+
+.col{
+    float : left;
+    width: calc((100% - #{$gutter-h})/2);
+    &:not(:last-child){
+        margin-right: $gutter-h;
+    }
+}

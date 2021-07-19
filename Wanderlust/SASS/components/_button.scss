@@ -28,14 +28,14 @@
     }
     
     &--white{
-        background-color: white;
-        color: black;
+        background-color: $color-white;
+        color: $color-head-primary;
         word-spacing: 1.5rem;
         animation: btn-animate 1s 5s ease-out;
         animation-fill-mode: backwards;
         
         &::after{
-            background-color: white;
+            background-color: $color-white;
         }
 
     }
