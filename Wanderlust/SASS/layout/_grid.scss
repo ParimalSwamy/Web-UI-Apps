@@ -14,3 +14,11 @@
         margin-right: $gutter-h;
     }
 }
+
+.col-1-4{
+    float : left;
+    width: calc((100% - #{$gutter-h})/5);
+    &:not(:last-child){
+        margin-right: $gutter-h;
+    }
+}
