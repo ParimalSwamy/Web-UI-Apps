@@ -3,7 +3,7 @@
     <head>
         <title>Wishes</title>
         <link rel="stylesheet" href="CSS/style.css">
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </head>
     
     <body>
@@ -17,19 +17,95 @@
             
             <div class="text-container">
             <div class="text" >
-                <span id="happy">Happy</span>
-                <span id="birthday">birthday</span>
+                <span id="happy" class="happy">Happy</span>
+                <span id="birthday" class="birthday">birthday</span>
             </div>
             
             <div class="text" >
-                <span id="to">to</span>
-                <span id="you">you</span>
+                <span id="to" class="to">to</span>
+                <span id="you" class="you">you</span>
             </div>
             <div class="text" >
-                <span id="navya">Parimal</span>
+                <span id="name" class="name">Parimal</span>
             </div>
                 
+                
+            </div>
+            
+            
+            <div class="song">
+            <audio id="bday-song">
+  <source src="Media/bday-song.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+                <div id="btn-bg" onclick="play()" class="btn-bg"><div  onclick="play()" class="song-button"></div></div>
+               
             </div>
         </div>
+        
+        <script type="text/javascript">
+            
+    $(document).ready(function(){
+        
+        $('#btn-bg').click(function(){
+            $(".text").css('display','block');
+            $('#btn-bg').fadeOut(500);
+            $('#happy').addClass("animate-happy");
+            $('#birthday').addClass("animate-birthday");
+            $('#to').addClass("animate-to");
+            $('#you').addClass("animate-you");
+            $('#name').addClass("animate-name");
+            
+            setTimeout(function() {
+                $('#happy').removeClass('animate-happy');
+                $('#happy').addClass('animate-happy-new');
+            }, 11000);
+        
+        
+        setTimeout(function() {
+                $('#birthday').removeClass('animate-birthday');
+                $('#birthday').addClass('animate-birthday-new');
+            }, 12000);
+       
+            
+        setTimeout(function() {
+                $('#to').removeClass('animate-to');
+                $('#to').addClass('animate-to-new');
+            }, 13500);
+       
+        
+        setTimeout(function() {
+                $('#you').removeClass('animate-you');
+                $('#you').addClass('animate-you-new');
+            }, 14500);
+            
+            setTimeout(function() {
+                $('#happy').removeClass('animate-happy-new');
+                $('#happy').addClass('animate-happy-new-new');
+            }, 18000);
+            
+            setTimeout(function() {
+                $('#birthday').removeClass('animate-birthday-new');
+                $('#birthday').addClass('animate-birthday-new-new');
+            }, 19000);
+            
+            setTimeout(function() {
+                $('#to').removeClass('animate-to-new');
+                $('#to').addClass('animate-to-new-new');
+            }, 20500);
+            
+            setTimeout(function() {
+                $('#you').removeClass('animate-you-new');
+                $('#you').addClass('animate-you-new-new');
+            }, 21500);
+            
+        });
+   });
+            
+            function play(){
+                var a = document.getElementById('bday-song');
+                a.play();
+                }
+        </script>
     </body>
 </HTML>
