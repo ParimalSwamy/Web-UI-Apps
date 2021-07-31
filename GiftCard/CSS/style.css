@@ -1,0 +1,73 @@
+{
+    margin: 0;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+  overflow: hidden;
+}
+
+.sliding-background {
+  background: url("../Img/BodyBG.jpg") repeat-x;
+  height: 95vh;
+  width: 3000px;
+    background-size: 100%;
+  animation: slide 300s linear infinite;
+    
+}
+
+@keyframes slide{
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-1692px, 0, 0);
+  }
+}
+
+#main{
+    width: 90%;
+    height: 90%;
+    background-color: black;
+    border-radius: 10px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    box-shadow: 0 1rem 2rem rgba(0,0,0,0.5);
+    background-image:linear-gradient(rgba(255,255,255,0.9),rgba(255,255,255,0.9)),url(../Img/MainBG.jpg);
+    background-size: 100%;
+}
+
+
+.flag-banner{
+    width: 100%;
+    height: 100px;
+    background-image: url(../Img/flags.png);
+    background-size: 100%;
+}
+
+#flag-banner2{
+    position: absolute;
+    top: 59px;  
+    left: 125px;
+    transform: rotate(15deg);
+    width: 79%;
+}
+
+.text1{
+    position: absolute;
+    top: 30%;
+    left : 50px;
+    font-size: 50px;
+    font-family:sans-serif;
+}
+
+#birthday1{
+    left: 220px;
+}
+
