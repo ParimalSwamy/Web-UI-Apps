@@ -18,7 +18,7 @@ body{
 }
 
 .sliding-background {
-  background: url("../Img/BodyBG.jpg") repeat-x;
+  background: url("../Img/BodyBG-min.jpg") repeat-x;
   height: 95vh;
   width: 3000px;
     background-size: 100%;
@@ -83,6 +83,7 @@ body{
     border: 0px solid black;
     animation-fill-mode: backwards;
     display: none;
+    margin-top: 10px;
 }
 
 @keyframes moveInBottom{
