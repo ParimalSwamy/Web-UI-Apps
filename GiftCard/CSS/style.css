@@ -1,11 +1,11 @@
 *{
-    margin: 0;
+    margin: 0px auto;
 }
 
 body{
     height: 100%;
     width: 100%;
-    margin: 20px;
+    margin: 0px;
 }
 
 @font-face {
@@ -19,7 +19,7 @@ body{
 }
 
 .sliding-background {
-  background: url("../Img/bodyBG.jpg") repeat-x;
+  background: url("../Img/BodyBG-min.jpg") repeat-x;
   height: 95vh;
   width: 3000px;
     background-size: 100%;
@@ -79,7 +79,7 @@ body{
     font-family:b-font;
     text-align: center;
     padding: 0px;
-    color:crimson;
+    color:#439699;
     font-weight: 400;
     border: 0px solid black;
     animation-fill-mode: backwards;
@@ -104,13 +104,13 @@ body{
 }
 
 @keyframes changeColor{
-    from{color:  crimson}
-    to{color: #439699}
+    from{color:  #439699 }
+    to{color: #ebcc34 }
 }
 
 @keyframes changeColor-old{
-    from{color:  #439699}
-    to{color: #ebcc34}
+    from{color: #ebcc34}
+    to{color: crimson}
 }
 
 .animate-happy{
@@ -194,7 +194,7 @@ body{
     animation-duration: 2s;
     animation-delay: 22s;
     animation-fill-mode :both;
-    color: #ebcc34;
+    color: crimson;
 }
 
 
@@ -279,7 +279,7 @@ body{
   position:absolute;
   height:200px;
   width:1px;
-  margin:20px auto;
+  margin:0px auto;
   content:"";
   background:rgba(0,0,0,0.2); 
 }
