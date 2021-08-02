@@ -5,7 +5,7 @@
 body{
     height: 100%;
     width: 100%;
-    margin: 20px;
+    margin: 0px;
 }
 
 @font-face {
@@ -19,7 +19,7 @@ body{
 }
 
 .sliding-background {
-  background: url(../Img/BodyBG-min.jpg) repeat-x;
+  background: url(../Img/MainBG.jpg) repeat-x;
   height: 95vh;
   width: 3000px;
     background-size: 100%;
